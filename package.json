@@ -1,0 +1,17 @@
+{
+  "name": "imagetracer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Privacy-first reverse image search Chromium extension with optional cloud features.",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:extension": "pnpm --filter @imagetracer/extension dev",
+    "build": "pnpm --filter @imagetracer/extension build",
+    "typecheck": "pnpm --filter @imagetracer/extension typecheck",
+    "test": "pnpm --filter @imagetracer/extension test",
+    "test:api": "cd apps/api && python -m pytest"
+  }
+}
